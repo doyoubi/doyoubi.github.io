@@ -1,1 +1,169 @@
-hello doyoubi
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+    <style type="text/css">
+        body{
+            background-color: #eee;
+            font-family: "Microsoft Yahei";
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            background-color: #ffffff;
+            border-radius: 2px;
+            box-shadow: 0 0 8px #ccc;
+            margin: 20px auto;
+            width: 900px;
+        }
+
+        .header{
+            background-color: #5bc4be;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .resume{
+            text-indent: 30px;
+            line-height: 200%;
+            font-size: 30px;
+        }
+        .info{
+            text-indent: 50px;
+            line-height: 120%;
+        }
+        .info h2{
+            font-size: 20px;
+        }
+
+        .main-content{
+            background-color: #ffffff;
+        }
+        .title{
+            background-color: #5bc4be;
+            display: inline-block;
+            border-radius: 2px;
+            padding: 10px;
+            margin-left: 20px;
+            color: #ffffff;
+            font-size: 20px;
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+        .dashed-line{
+            color: #333;
+            width: 800px;
+            margin: 0 auto;
+            border-bottom: 1px dashed #5bc4be;
+            position: relative;
+            top: -1px;
+        }
+        .sub-title{
+            text-indent: 25px;
+            font-size: 15px;
+        }
+        .sub-content{
+            width: 800px;
+            margin: 0 auto;
+        }
+        .sub-content a{
+            text-decoration: none;
+            color: #333333;
+        }
+        .sub-content a:hover{
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1 class="resume">简历</h1>
+            <div class="info">
+                <h2>黄光星</h2>
+                <h2>深圳大学 - 计算机科学与技术</h2>
+                <h2>cocos2dx开发</h2>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2 class="title">
+                自我介绍
+            </h2>
+            <div class="dashed-line"></div>
+            <div class="sub-content">
+                就读于深圳大学计算机学院。<br/>
+                因初三成功用简单的汇编修改GBA的口袋妖怪而对制作游戏产生兴趣。<br/>
+                学过一点图形学，一点AI，熟悉c++，理解opengl的可编程管线，使用cocos2dx开发游戏。<br/>
+            </div>
+
+            <h2 class="title">
+                项目经验
+            </h2>
+            <div class="dashed-line"></div>
+
+            <h3 class="sub-title">
+                用opengl做三维水墨效果
+            </h3>
+            <div class="sub-content">
+                用opengl 4.3实现了水墨扩散效果<br/>
+                （技术源于论文 MoXi: Real-Time Ink Dispersion in Absorbent Paper, Nelson S.-H. Chu 2005）<br/>
+                然后把二维的水墨扩散效果加到三维的物体中。<br/>
+                <div>
+                    <img src="ink.jpg" width=280 height=210>
+                </div>
+            </div>
+
+            <h3 class="sub-title">
+                两个手游
+            </h3>
+            <div class="sub-content">
+                <div>
+                    <img src="pokeFight.jpg" width=300 height=200>
+                    <img src="joker.jpg" width=300 height=200>
+                </div>
+                做第一个手游时，主要学习了一些寻路的做法，后来烂尾了。<br/>
+                第二个手游正在做，是一个结合音乐游戏和横板过关的游戏。
+            </div>
+
+            <h3 class="sub-title">
+                两个网站
+            </h3>
+            <div class="sub-content">
+                深圳大学的媒体网：
+                <a href="http://stu.szu.edu.cn/">学子天地</a><br/>
+                深圳大学的
+                <a href="http://stu.szu.edu.cn:8080/">场地使用申请系统</a><br/>
+                都是负责后台，使用Django开发<br/>
+            </div>
+
+            <h3 class="sub-title">
+                各种小东西
+            </h3>
+            <div class="sub-content">
+                <a href="https://github.com/doyoubi/circular_list/blob/master/circlelist/circle_list.h">
+                    仿照STL实现双链表
+                </a><br/>
+                <a href="https://gitcafe.com/doyoubi/basic_pipline/tree/pipline/canvas">
+                    尝试用软件实现opengl渲染管道（只做到把顶点变换到fragment shader）
+                </a><br/>
+                <a href="https://github.com/doyoubi/ray_tracing/tree/raytracing/canvas">
+                    简单的光线跟踪
+                </a><br/>
+                用opengl做阴影，法线贴图，deferred shading
+            </div>
+
+            <h2 class="title">
+                联系方式
+            </h2>
+            <div class="dashed-line"></div>
+            <div class="sub-content">
+                QQ：419446171<br/>
+                手机：15019494795<br/>
+                邮箱：doyoubihgx@gmail.com<br/>
+            </div>
+
+            <div style="width: 800; height: 50px;">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
