@@ -12,6 +12,8 @@
             padding: 0;
         }
         .main-container{
+            position: relative;
+            overflow: hidden;
             background-color: #ffffff;
             border-radius: 2px;
             box-shadow: 0 0 8px #ccc;
@@ -38,6 +40,8 @@
         }
 
         .main-content{
+            position: relative;
+            overflow: hidden;
             background-color: #ffffff;
         }
         .title{
@@ -53,7 +57,7 @@
         }
         .dashed-line{
             color: #333;
-            width: 800px;
+            width: 80%;
             margin: 0 auto;
             border-bottom: 1px dashed #B35C44;
             position: relative;
@@ -64,7 +68,7 @@
             font-size: 15px;
         }
         .sub-content{
-            width: 800px;
+            width: 80%;
             margin: 0 auto;
         }
         .sub-content a{
@@ -74,6 +78,31 @@
         .sub-content a:hover{
             color: #000000;
         }
+        .left-container{
+            width: 50%;
+            float: left;
+        }
+        .right-container{
+            width: 50%;
+            float: left;
+        }
+        .sub-title{
+            font-weight: bold;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+        .colored{
+            color: #B35C44;
+        }
+        .line{
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+        .footer{
+            width: 900px;
+            height: 50px;
+            background-color: #ffffff;
+        }
     </style>
 </head>
 <body>
@@ -82,124 +111,184 @@
             <h1 class="resume">简历</h1>
             <div class="info">
                 <h2>黄光星</h2>
-                <h2>深圳大学 - 计算机科学与技术</h2>
+                <h2>深圳大学 - 后端开发工程师</h2>
             </div>
         </div>
         <div class="main-content">
-
-            <h2 class="title">
-                联系方式
-            </h2>
-            <div class="dashed-line"></div>
-            <div class="sub-content">
-                QQ ：419446171<br/>
-                手机：15019494795<br/>
-                邮箱：doyoubihgx@gmail.com<br/>
-                该简历网页版：https://doyoubi.github.io/<br/>
-            </div>
-            
-            <h2 class="title">
-                自我介绍
-            </h2>
-            <div class="dashed-line"></div>
-            <div class="sub-content">
-                就读于深圳大学计算机学院。<br/>
-                因初三成功用简单的汇编修改GBA的口袋妖怪而对制作游戏产生兴趣。<br/>
-                喜欢比较不同编程语言的表达能力，喜欢剖解编程语言的特性。<br/>
-                玩c++，非常喜欢c++11。用Python做过网站。<br/>
-                费了很大劲去理解haskell和范畴论，觉得很神奇！但至今仍有
-                <a href="http://www.jianshu.com/p/61f16ca137d1?search_token=9cfcbb7edd76d215880089235ccb8b2d0c8476177a441da94603a34d13f7c672">
-                    想不通的地方
-                </a>。<br/>
-
-                除了编程语言、图形学、游戏相关的书，还因
-                <a href="http://book.douban.com/subject/1148282/">
-                    《sicp》
-                </a>
-                和
-                <a href="http://book.douban.com/subject/24841112/">
-                    《编程的修炼》
-                </a>
-                而开了眼界。<br/>
-
-                在校媒<a href="http://stu.szu.edu.cn/">学子天地</a>技术部中认识了一帮志同道合的人，是大学一件幸运的事。<br/>
-                <a style="line-height: 200%" href="http://www.jianshu.com/users/c01200a5ca61/latest_articles">
-                    这是我作笔记本用的博客
-                </a>
-            </div>
-
-            <h2 class="title">
-                项目经验
-            </h2>
-            <div class="dashed-line"></div>
-
-            <h3 class="sub-title">
-                用opengl做三维水墨效果
-            </h3>
-            <div class="sub-content">
-                这是一个高三就开始有的想法，希望能把三维物体渲染出水墨画的效果。<br/>
-                先用opengl 4.3实现了水墨扩散效果<br/>
-                （技术源于论文 MoXi: Real-Time Ink Dispersion in Absorbent Paper, Nelson S.-H. Chu 2005）<br/>
-                然后用二维的水墨扩散效果渲染三维物体。<br/>
-                <div>
-                    <img src="ink2.jpg">
+            <div class="left-container">
+                <h2 class="title">
+                    联系方式
+                </h2>
+                <div class="dashed-line"></div>
+                <div class="sub-content">
+                    QQ ：419446171<br/>
+                    手机：15019494795<br/>
+                    邮箱：doyoubihgx@gmail.com<br/>
+                    该简历网页版：https://doyoubi.github.io/<br/>
                 </div>
-                （右图是原来的三维模型，左边是加了水墨的效果）<br/>
-                从这个小研究中学习了opengl的可编程管线，学到了一些调试shader的小技巧。<br/>
-                明白了理清思路，把问题清晰表达出来的重要性。<br/>
-            </div>
 
-            <h3 class="sub-title">
-                两个手游
-            </h3>
-            <div class="sub-content">
-                <div>
-                    <img width=300 height=200 src="pokeFight.jpg">
-                    <img width=300 height=200 src="joker.jpg">
+                <h2 class="title">
+                    自我介绍
+                </h2>
+                <div class="dashed-line"></div>
+                <div class="sub-content">
+                    就读于深圳大学计算机学院。<br/>
+                    因初中用汇编修改GBA游戏而发现对计算机技术有浓厚兴趣。<br/>
+                    本来希望从事游戏开发，后转为后端开发。<br/>
+                    在校媒<a href="http://stu.szu.edu.cn/">学子天地</a>    技术部中认识了一帮志同道合的人，是大学一件幸运的事。<br/>
+                    <a style="line-height: 200%" href="http://www.jianshu.com/users/c01200a5ca61/latest_articles"   >
+                        这是我作笔记本用的博客
+                    </a>
                 </div>
-                做第一个手游主要为了熟悉cocos的用法，边翻cocos2d-x源代码边学引擎，还学了一些寻路的做法<br/>
-                第二个手游
-                (<a href="http://v.youku.com/v_show/id_XOTA3ODU2MjI0.html">游戏视频</a>,
-                <a href="https://github.com/doyoubi/Joker">源代码</a>)结合了音乐游戏和平台游戏，玩家需要跟着音乐节拍躲避攻击、击倒敌人。
+
+                <h2 class="title">
+                    开发技能
+                </h2>
+                <div class="dashed-line"></div>
+
+                <h4 class="sub-title">编程语言</h4>
+                <div class="sub-content">
+                    <div class="line">
+                        <strong class="colored">C++</strong>
+                        理解对象模型，熟悉STL，了解模板元编程，了解部分C++11特性<br/>
+                    </div>
+                    <div class="line">
+                        <strong class="colored">Python</strong>
+                        理解对象模型(descriptor，meta class等)，读过CPython2.7部分源码<br/>
+                    </div>
+                    <div class="line">
+                        了解多种编程语言，如Lisp，haskell，热爱剖析各编程语言特性，能快速学习新语言<br/>
+                    </div>
+                </div>
+
+                <h4 class="sub-title">Python后端开发</h4>
+                <div class="sub-content">
+                    <div class="line">
+                        使用<strong class="colored">Django,Flask</strong>(及插件),<strong class="colored">sqlalchemy</strong>开发web或app后端，能通过源代码学习框架
+                    </div>
+                    <div class="line">
+                        理解<strong class="colored">MVC</strong>，理解模型层和视图层分离的重要性
+                    </div>
+                    <div class="line">
+                        使用<strong class="colored">Mysql,Postgresql</strong>持久化数据，
+                        了解使用<strong class="colored">Redis</strong>做数据库缓存
+                    </div>
+                    <div class="line">
+                        了解使用<strong class="colored">Nginx,Gunicorn</strong>来提高并发能力
+                    </div>
+                    <div class="line">
+                        了解<strong class="colored">TCP,HTTP,WSGI</strong>协议，能够通过阅读相关RFC解决问题
+                    </div>
+                </div>
+
+                <h4 class="sub-title">图形渲染</h4>
+                <div class="sub-content">
+                    <div class="line">
+                        熟悉<strong class="colored">Opengl</strong>可编程管线，能实现简单的渲染算法
+                    </div>
+                    <div class="line">
+                        了解几个调试的方法，能绕过一些shader的bug
+                    </div>
+                </div>
+
+                <h4 class="sub-title">其它</h4>
+                <div class="sub-content">
+                    <div class="line">
+                        能写简单的静态Web页面，理解<a href="http://www.jianshu.com/p/704b76e3417d">CSS布局原理</a>
+                    </div>
+                    <div class="line">
+                        理解操作系统基本原理，读过xv6
+                    </div>
+                    <div class="line">
+                        使用<strong class="colored">git</strong>管理工程，
+                        能使用Linux常用命令和<strong class="colored">vim</strong>等常用工具
+                    </div>
+                    <div class="line">
+                        因<a href="http://book.douban.com/subject/24841112/">《编程的修炼》</a>开了眼界。
+                    </div>
+                </div>
+                <div class="sub-content">
+                </div>
             </div>
 
-            <h3 class="sub-title">
-                两个网站
-            </h3>
-            <div class="sub-content">
-                深圳大学的媒体网：
-                <a href="http://stu.szu.edu.cn/">学子天地</a><br/>
-                深圳大学的
-                <a href="http://stu.szu.edu.cn:8080/">场地使用申请系统</a><br/>
-                都是做负责人并且自己一个人写后端程序，使用Django开发。犯过严重的设计错误，开始明白分离各部分逻辑的重要性和重复代码的危害。<br/>
-                大一的时候为了统一css定位写法，就去啃css定位问题：
-                <a href="http://www.jianshu.com/p/704b76e3417d">css定位总结</a><br/>
-            </div>
+            <div class="right-container">
+                <h2 class="title">
+                    实习经验
+                </h2>
+                <div class="dashed-line"></div>
+    
+                <h4 class="sub-title">万科物业 数据与信息技术部，大三暑假开始至今。</h4>
+                <div class="sub-content">
+                    负责app后端开发，使用Python，Flask。<br/>
+                    借此理解了<strong class="colored">OAuth2.0</strong>协议，增加了HTTP协议的了解。<br/>
+                    见识了用<strong class="colored">Redis</strong>做缓存。<br/>
+                    了解了fabric等运维工具。<br/>
+                </div>
 
-            <h3 class="sub-title">
-                各种小东西
-            </h3>
-            <div class="sub-content">
-                <a href="https://github.com/doyoubi/minimoe">
-                    minimoe
-                </a>仿照tinymoe编程语言，去掉有歧义文法并改了一些语法，尝试重新实现，目前还未完工。<br/>
-                <a href="https://github.com/doyoubi/circular_list/blob/master/circlelist/circle_list.h">
-                    仿照STL实现循环链表
-                </a><br/>
-                <a href="https://gitcafe.com/doyoubi/basic_pipline/tree/pipline/canvas">
-                    用软件实现opengl渲染管道中的顶点变换
-                </a><br/>
-                <a href="https://github.com/doyoubi/ray_tracing/tree/raytracing/canvas">
-                    简单的光线跟踪
-                </a><br/>
-                用opengl做阴影，法线贴图，deferred shading<br/>
-                用c++模板元编程算素数表<br/>
-            </div>
+                <h2 class="title">
+                    项目经验
+                </h2>
+                <div class="dashed-line"></div>
+        
+                <h3 class="sub-title">
+                    用opengl做三维水墨效果
+                </h3>
+                <div class="sub-content">
+                    用opengl 4.3把三维物体渲染出水墨画的效果。<br/>
+                    参考<a href="http://dl.acm.org/citation.cfm?id=1073221">Real-Time Ink Dispersion in Absorbent Paper</a><br/>
+                    <div>
+                        <img src="ink2.jpg" width="300px">
+                    </div>
+                    （左：水墨效果，右：原始白模）<br/>
+                </div>
 
-            <div style="width: 800; height: 50px;">
-            </div>
+                <h3 class="sub-title">
+                    手游
+                </h3>
+                <div class="sub-content">
+                    理解了<strong class="colored">分层状态机</strong>，使用<strong class="colored">行为树</strong>编写敌人AI<br/>
+                    明白了表现逻辑与业务逻辑分离的重要性<br/>
+                    (<a href="http://v.youku.com/v_show/id_XOTA3ODU2MjI0.html">游戏视频</a>,
+                    <a href="https://github.com/doyoubi/Joker">源代码</a>)
+                </div>
 
+                <h3 class="sub-title">
+                    两个网站
+                </h3>
+                <div class="sub-content">
+                    深圳大学的媒体网：
+                    <a href="http://stu.szu.edu.cn/">学子天地</a><br/>
+                    深圳大学的
+                    <a href="http://stu.szu.edu.cn:8080/">场地使用申请系统</a><br/>
+                    都是做负责人并且自己一个人写后端程序，使用Django开发。犯过严重的设计错误，开始明白分离各部分逻辑的重要性和重复代码的危害。<br/>
+                </div>
+
+
+                <h3 class="sub-title">
+                    各种小东西
+                </h3>
+                <div class="sub-content">
+                    <a href="https://github.com/doyoubi/minimoe">
+                        minimoe
+                    </a>仿照tinymoe编程语言，去掉有歧义文法并改了一些语法，尝试重新实现，目前还未完工。<br/>
+                    <a href="https://github.com/doyoubi/circular_list/blob/master/circlelist/circle_list.h">
+                        仿照STL实现循环链表
+                    </a><br/>
+                    <a href="https://gitcafe.com/doyoubi/basic_pipline/tree/pipline/canvas">
+                        用软件实现opengl渲染管道中的顶点变换
+                    </a><br/>
+                    <a href="https://github.com/doyoubi/ray_tracing/tree/raytracing/canvas">
+                        简单的光线跟踪
+                    </a><br/>
+                    用opengl做阴影，法线贴图，deferred shading<br/>
+                    用c++模板元编程算素数表<br/>
+                </div>
+            </div>
         </div>
+            
+        <div class="footer">
+        </div>
+
     </div>
 </body>
 </html>
